@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="http://www.austintexas.gov/fact/fact_rss.cfm" rel="self" type="application/rss+xml" />
+<title>Active Fire Incident Page</title>
+<link>http://www.austintexas.gov/fact/default.cfm</link>
+<description>This page provides information on active Austin/Travis County Fire incidents.  Data is updated every 3 minutes.
+</description>
+<lastBuildDate>Mon, 14 Feb 2022 16:59:56 CDT</lastBuildDate>
+<copyright>2022 City of Austin. All rights reserved.</copyright>
+<language>en-us</language>
+
+<item>
+
+<title>BRUSH - Brush Fire</title>
+<link>http://maps.google.com/maps?q=30.767735,-97.876783</link>
+<guid isPermaLink="false">9B5927CEC83EE94F602974CA14A6FFD0569B777A</guid>
+<description>6780-8398 N US 183 | NON - ADVISED INCIDENT | 16:48:52</description>
+<pubDate>Mon, 14 Feb 2022 16:48:52 CDT</pubDate>
+</item>
+
+<item>
+
+<title>Traffic Injury Pri 4F</title>
+<link>http://maps.google.com/maps?q=30.399615,-97.850904</link>
+<guid isPermaLink="false">E1CF984DAC4C3E377F4662FCCCE3602106165EEF</guid>
+<description>11213 Fm 2222 Rd | AFD | 16:53:43</description>
+<pubDate>Mon, 14 Feb 2022 16:53:43 CDT</pubDate>
+</item>
+
+<item>
+
+<title>ALARM - Fire Alarm</title>
+<link>http://maps.google.com/maps?q=30.321938,-97.808294</link>
+<guid isPermaLink="false">3F8BED0F0E2ADB62764BF557B3C92D7E6B2E9FEC</guid>
+<description>2537 WAYMAKER WAY | AFD | 16:14:52</description>
+<pubDate>Mon, 14 Feb 2022 16:14:52 CDT</pubDate>
+</item>
+
+<item>
+
+<title>RESQT - Rescue Task Force</title>
+<link>http://maps.google.com/maps?q=30.501646,-97.790996</link>
+<guid isPermaLink="false">CEC1022BEFB63F729C72D1EE8A071FCD2876D273</guid>
+<description>15116 Dodge Cattle Cv | AFD | 16:37:09</description>
+<pubDate>Mon, 14 Feb 2022 16:37:09 CDT</pubDate>
+</item>
+
+</channel>
+</rss>

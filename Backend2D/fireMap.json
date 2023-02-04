@@ -1,0 +1,41 @@
+{
+    "rss": {
+        "@version": "2.0",
+        "@xmlns:atom": "http://www.w3.org/2005/Atom",
+        "channel": {
+            "atom:link": {
+                "@href": "http://www.austintexas.gov/fact/fact_rss.cfm",
+                "@rel": "self",
+                "@type": "application/rss+xml"
+            },
+            "title": "Active Fire Incident Page",
+            "link": "http://www.austintexas.gov/fact/default.cfm",
+            "description": "This page provides information on active Austin/Travis County Fire incidents.  Data is updated every 3 minutes.",
+            "lastBuildDate": "Mon, 24 Jan 2022 13:09:39 CDT",
+            "copyright": "2022 City of Austin. All rights reserved.",
+            "language": "en-us",
+            "item": [
+                {
+                    "title": "BOX - Structure Fire",
+                    "link": "http://maps.google.com/maps?q=30.327929,-97.677634",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "21FB34D3B06DA9B6DABEA3B3DE5C99A402223FD3"
+                    },
+                    "description": "2215 E ANDERSON LN SVRD EB | AFD | 11:57:42",
+                    "pubDate": "Mon, 24 Jan 2022 11:57:42 CDT"
+                },
+                {
+                    "title": "WARC - Wires Arcing",
+                    "link": "http://maps.google.com/maps?q=30.351989,-97.707446",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "D18F929AD307A44534F4BA34854D5CC9579D29F2"
+                    },
+                    "description": "8305 N Lamar Blvd | AFD | 12:57:15",
+                    "pubDate": "Mon, 24 Jan 2022 12:57:15 CDT"
+                }
+            ]
+        }
+    }
+}
