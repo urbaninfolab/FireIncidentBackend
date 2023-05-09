@@ -4,7 +4,7 @@
 
 
 # Fire and Smoke Digital Twin: Backend
-See the [Frontend](https://github.com/UrbanInfoLab/FireIncidentFrontend) or the [API](https://github.com/UrbanInfoLab/FireIncidentAPI) for more details.
+See the [Frontend](https://github.com/UrbanInfoLab/FireIncidentFrontend) or the [API](https://github.com/UrbanInfoLab/FireIncidentData) for more details.
 
 [![latest release badge]][latest release link] [![github stars badge]][github stars link] [![github forks badge]][github forks link]
 
@@ -29,7 +29,7 @@ See the [Frontend](https://github.com/UrbanInfoLab/FireIncidentFrontend) or the 
 
 </div>
 
-The Fire and Smoke Digital Twin Backend is the engine that drives our real-time fire incident visualization platform. It consists of web scrapers for over twenty different fire departments, responsible for unifying their data formats into our collection format. All data is backed up and made publicly accessible via our [FireIncidentAPI](https://github.com/UrbanInfoLab/FireIncidentAPI).
+The Fire and Smoke Digital Twin Backend is the engine that drives our real-time fire incident visualization platform. It consists of web scrapers for over twenty different fire departments, responsible for unifying their data formats into our collection format. All data is backed up and made publicly accessible via our [FireIncidentAPI](https://github.com/UrbanInfoLab/FireIncidentData).
 
 Our backend system not only collects data but also generates smoke fallouts using VSmoke and MantaFlow fluid simulations at one hour, two hour, and three hour marks. 
 
