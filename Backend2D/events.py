@@ -528,7 +528,9 @@ elif typename == "fireRisk":
 elif typename == "fireMap":
 
     # API: https://www.austintexas.gov/fact/fact_rss.cfm
-    response = requests.get("https://www.austintexas.gov/fact/fact_rss.cfm", timeout=20)
+    # response = requests.get("https://www.austintexas.gov/fact/fact_rss.cfm", timeout=20)
+    # City updated to services endpoint, without telling us..? 
+    response = requests.get("https://services.austintexas.gov/fact/fact_rss.cfm", timeout=20) 
     with open('fireMap.xml', 'wb') as f:
         f.write(response.content)
 
