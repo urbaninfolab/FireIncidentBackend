@@ -17,7 +17,6 @@ from urllib.parse import urlencode, urljoin, urlparse,  quote_plus
 import xmltojson
 import math
 import subprocess
-from incapsula import IncapSession
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from shapely.geometry import shape, GeometryCollection, Point
@@ -836,36 +835,36 @@ elif typename == "fireMapOklahomaCity":
     #    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 YaBrowser/22.7.2.662 Mobile/15E148 Safari/604.1',
     #    'Accept': 'application/vnd.github.v3.text-match+json'
     #}
-    session = IncapSession()
-    response = session.get(url)  # url is not blocked by incapsula
-    #response = requests.get(url,headers=headers)
-    response.encoding = 'utf-8'
+    # session = IncapSession()
+    # response = session.get(url)  # url is not blocked by incapsula
+    # #response = requests.get(url,headers=headers)
+    # response.encoding = 'utf-8'
 
-    print(response.text)
+    # print(response.text)
 
-    json_data = json.loads(response.text)
-    fireArray = []
+    # json_data = json.loads(response.text)
+    # fireArray = []
 
-    # Extract fire data for OKC
-    for item in json_data["Features"]:
-        if("fire" in item["Attributes"][2].lower() or "burning" in item["Attributes"][2].lower()):
-            # New dict
-            dictObj = {}
-            dictObj["Address"] = item["Attributes"][0]
-            dictObj["IncidentType"] = item["Attributes"][2]
-            dictObj["LATITUDE"] = item["Geometry"]["latitude"]
-            dictObj["LONGITUDE"] = item["Geometry"]["longitude"]
-            fireArray.append(dictObj)
+    # # Extract fire data for OKC
+    # for item in json_data["Features"]:
+    #     if("fire" in item["Attributes"][2].lower() or "burning" in item["Attributes"][2].lower()):
+    #         # New dict
+    #         dictObj = {}
+    #         dictObj["Address"] = item["Attributes"][0]
+    #         dictObj["IncidentType"] = item["Attributes"][2]
+    #         dictObj["LATITUDE"] = item["Geometry"]["latitude"]
+    #         dictObj["LONGITUDE"] = item["Geometry"]["longitude"]
+    #         fireArray.append(dictObj)
 
-    # Custom Coordinates for OKC
-    def customCoordinateFunc(fire, currentdict):
+    # # Custom Coordinates for OKC
+    # def customCoordinateFunc(fire, currentdict):
 
-        lon = str(fire["LATITUDE"])
-        lat = str(fire["LONGITUDE"])
+    #     lon = str(fire["LATITUDE"])
+    #     lat = str(fire["LONGITUDE"])
 
-        return "http://maps.google.com/maps?q=" + lon + "," + lat
+    #     return "http://maps.google.com/maps?q=" + lon + "," + lat
 
-    dataConverter("OklahomaCity",fireArray,"IncidentType","Address", customCoordinateFunc)
+    # dataConverter("OklahomaCity",fireArray,"IncidentType","Address", customCoordinateFunc)
 
 elif typename == "fireMapLosAngeles":
     
