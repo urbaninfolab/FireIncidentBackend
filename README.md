@@ -33,7 +33,16 @@ The Fire and Smoke Digital Twin Backend is the engine that drives our real-time 
 
 Our backend system not only collects data but also generates smoke fallouts using VSmoke and MantaFlow fluid simulations at one hour, two hour, and three hour marks. 
 
+## Quick Start: 2D
+
 The `Backend2D` folder contains scripts for fetching live fire information from selected city fire departments and converting it to our unified format. After fetching the data, it runs the VSmoke smoke simulation to generate an approximate smoke path for each fire. This operation is swift, taking less than a second for each fire incident.
+
+First, go into the Backend2D folder and install the Python requirements:
+
+```bash
+cd Backend2D
+pip install -r requirements.txt
+```
 
 To run the 2D backend, execute the following command:
 
@@ -43,8 +52,11 @@ python events.py fireMap<City>
 
 Here, `<City>` should be replaced with your chosen city, such as `Houston`, `Dallas`, or `LosAngeles`. See our City Coverage below.
 
+## Quick Start: 3D
+
 The `Backend3D` folder, on the other hand, works with the fetched fire information to conduct a more accurate fluid simulation using MantaFlow and Blender. The MantaFlow fluid simulation takes into account all fire characteristics sourced from the fire department data, resulting in a highly accurate smoke path prediction.
 
+Note, you must install Blender 3.x for this. We recommend [Blender 3.5](https://download.blender.org/release/Blender3.5/).
 To run the 3D backend, execute the following command:
 
 ```bash
