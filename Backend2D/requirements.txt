@@ -1,0 +1,7 @@
+pandas
+requests
+xmltodict
+numpy
+beautifulsoup4
+shapely
+geopandas
