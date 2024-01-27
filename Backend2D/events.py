@@ -233,8 +233,8 @@ def checkDuplicates(data_dict,filename):
                             print(dp_exist["link"])
                             try:
                                 generateSmokePath(dp_exist,guid_text)
-                            except:
-                                print("Error generating smoke path")
+                            except Exception as e:
+                                print("Error generating smoke path:" + str(e))
                             break
                         else:
                             dp_exist['active_status'] = "no"
@@ -255,8 +255,8 @@ def checkDuplicates(data_dict,filename):
                         # create smoke path for active fire
                         try:
                             generateSmokePath(dp,guid_text)
-                        except:
-                            print("Error generating smoke path")
+                        except Exception as e:
+                            print("Error generating smoke path:" + str(e))
                 json_data['rss']['channel']['item'] = existing_data
         except Exception as e:
             print('has error when open json')
@@ -421,7 +421,7 @@ def generateSmokePath(dp, guid_text):
 
 
 def dictToURL(D, num, longNLatString):
-    queryURL = "http://weather.gfc.state.ga.us/googlevsmoke/cgi-bin/runvsmoke.py?"
+    queryURL = "https://weather.gfc.state.ga.us/googlevsmoke/cgi-bin/runvsmoke.py?"
     queryURL += "lat=" + str(D["lat"])
     queryURL += "&lon=" + str(D["lon"])
     queryURL += "&acres=" + str(D["acres"])
@@ -435,7 +435,7 @@ def dictToURL(D, num, longNLatString):
     response = requests.get(queryURL, timeout=20)
     text = response.text.replace('"', '')
     text = text[0:text.rfind("kml")+3]
-    url = "http://weather.gfc.state.ga.us" + text
+    url = "https://weather.gfc.state.ga.us" + text
     response = requests.get(url, timeout=20)
     with open(longNLatString + ".kml" + str(num),'wb') as output_file:
         output_file.write(response.content)
