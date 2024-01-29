@@ -92,6 +92,10 @@ This table is sorted alphabetically by city.
 
 Please note that due to some outages, we are missing data for a few days out of the year of 2022. Please keep this in mind when using the data.
 
+## Validation
+
+Please see the [validation branch](https://github.com/urbaninfolab/FireIncidentBackend/tree/validation) for the current case study validation of our model with 72.7% accuracy. Other methods are welcome!
+
 # Contributors
 
 The Fire and Smoke Digital Twin Backend is a collaborative project by the [Urban Information Lab](https://sites.utexas.edu/uil) and numerous other contributors. We extend our heartfelt thanks to all those involved for their time and dedication. A complete list of these remarkable contributors can be found [here](https://github.com/urbaninfolab/FireIncidentBackend/collaborators).
